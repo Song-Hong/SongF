@@ -49,6 +49,7 @@ namespace Song.Extend.Setting
         /// </summary>
         private void InitData()
         {
+            //加载图标
             _leftMenu    = rootVisualElement.Q<VisualElement>("LeftMenu");
             _state       = _leftMenu.Q<VisualElement>("State");
             _assets      = _leftMenu.Q<VisualElement>("Assets");
@@ -56,13 +57,14 @@ namespace Song.Extend.Setting
             _information = _leftMenu.Q<VisualElement>("Information");
             _area        = rootVisualElement.Q<VisualElement>("Area");
             
-            //color init
-            var iconBgColor = SColor.HexToColor("#2D2D2D");
+            //颜色初始化
+            var iconBgColor       = SColor.HexToColor("#2D2D2D");
             var iconBgColorChoose = SColor.KleinBlue();
-            var iconAndTextColor = SColor.HexToColor("#9E9E9E");
-            var textColorChoose = Color.white;
-            var iconColorChoose = SColor.HexToColor("#E0FFFF");
+            var iconAndTextColor  = SColor.HexToColor("#9E9E9E");
+            var textColorChoose   = Color.white;
+            var iconColorChoose   = SColor.HexToColor("#E0FFFF");
             
+            //为图标按钮绑定事件
             var items = new VisualElement[]{_state,_assets,_plugins,_information};
             foreach (var item in items)
             {
