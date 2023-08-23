@@ -1,0 +1,107 @@
+.Tools {
+    width: 90%;
+    height: 36px;
+    flex-direction: row;
+    position: absolute;
+    left: 55px;
+}
+
+.ToolsArea {
+    width: 100%;
+    height: 80px;
+}
+
+.FileController {
+    -unity-text-align: middle-center;
+    font-size: 12px;
+    height: 36px;
+    width: 50px;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    flex-direction: row;
+}
+
+.FileControllerIcon {
+    background-image: url('project://database/Assets/Song/Extend/Office/Excel/Art/MoreList.png?fileID=2800000&guid=cb5c3ba38d4714de9811b06bc9929142&type=3#MoreList');
+    width: 10px;
+    height: 10px;
+    margin-top: 14px;
+    position: absolute;
+    margin-left: 4px;
+}
+
+.FileControllerText {
+    margin-left: 18px;
+    -unity-font-style: bold;
+    color: rgb(255, 255, 255);
+}
+
+.QuickTools {
+    width: 26px;
+    height: 26px;
+    top: 3px;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+
+.Page {
+    background-color: rgba(0, 0, 0, 0);
+    color: rgb(255, 255, 255);
+    -unity-font-style: bold;
+    border-left-color: rgba(0, 0, 0, 0);
+    border-right-color: rgba(0, 0, 0, 0);
+    border-top-color: rgba(0, 0, 0, 0);
+    border-bottom-color: rgba(0, 0, 0, 0);
+    border-left-width: 0;
+    border-right-width: 0;
+    border-top-width: 0;
+    border-bottom-width: 0;
+    height: 26px;
+    margin-top: 5px;
+    width: 60px;
+}
+
+.PageChoose {
+    background-color: rgb(31, 168, 115);
+    color: rgb(255, 255, 255);
+    -unity-font-style: bold;
+    border-left-color: rgba(0, 0, 0, 0);
+    border-right-color: rgba(0, 0, 0, 0);
+    border-top-color: rgba(0, 0, 0, 0);
+    border-bottom-color: rgba(0, 0, 0, 0);
+    border-left-width: 0;
+    border-right-width: 0;
+    border-top-width: 0;
+    border-bottom-width: 0;
+    border-top-left-radius: 16px;
+    border-bottom-left-radius: 16px;
+    border-top-right-radius: 16px;
+    border-bottom-right-radius: 16px;
+    height: 26px;
+    margin-top: 5px;
+    width: 60px;
+}
+
+.PartingLine {
+    -unity-font-style: bold;
+    color: rgb(212, 212, 212);
+    height: 36px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    margin-left: 3px;
+    margin-right: 3px;
+}
+
+.Area {
+}
+
+.Sheets {
+}

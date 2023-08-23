@@ -1,0 +1,35 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/Song/Extend/Setting/View/SongSetting.uss?fileID=7433441132597879392&amp;guid=d493e289d38d4a56b983ee5b4ac0adc8&amp;type=3#SongSetting" />
+    <ui:VisualElement name="LeftMenu" class="LeftMenu" style="flex-grow: 1; border-right-width: 2px;">
+        <ui:VisualElement name="Info" class="Info">
+            <ui:VisualElement name="Icon" class="InfoIcon" />
+            <ui:Label tabindex="-1" text="SongF" display-tooltip-when-elided="true" name="Name" class="InfoName" />
+            <ui:Label tabindex="-1" text="V 0.01 Preview" display-tooltip-when-elided="true" name="Version" class="InfoVersion" />
+        </ui:VisualElement>
+        <ui:VisualElement name="State" class="LeftMenuItem">
+            <ui:VisualElement name="IconBg" class="LeftMenuItemIconbg">
+                <ui:VisualElement name="Icon" class="LeftMenuItemIcon" style="background-color: rgba(255, 255, 255, 0); background-image: url(&apos;project://database/Assets/Song/Extend/Setting/Art/state.png?fileID=2800000&amp;guid=df338c5b976d9427d812fd78ebe5e720&amp;type=3#state&apos;);" />
+            </ui:VisualElement>
+            <ui:Label tabindex="-1" text="状态" display-tooltip-when-elided="true" name="Name" class="LeftMenuItemText" />
+        </ui:VisualElement>
+        <ui:VisualElement name="Assets" class="LeftMenuItem">
+            <ui:VisualElement name="IconBg" class="LeftMenuItemIconbg">
+                <ui:VisualElement name="Icon" class="LeftMenuItemIcon" style="background-color: rgba(255, 255, 255, 0); background-image: url(&apos;project://database/Assets/Song/Extend/Setting/Art/assets.png?fileID=2800000&amp;guid=40440e567aa1548b284c077db7528cb2&amp;type=3#assets&apos;);" />
+            </ui:VisualElement>
+            <ui:Label tabindex="-1" text="资源" display-tooltip-when-elided="true" name="Name" class="LeftMenuItemText" />
+        </ui:VisualElement>
+        <ui:VisualElement name="Plugins" class="LeftMenuItem">
+            <ui:VisualElement name="IconBg" class="LeftMenuItemIconbg">
+                <ui:VisualElement name="Icon" class="LeftMenuItemIcon" style="background-color: rgba(255, 255, 255, 0); background-image: url(&apos;project://database/Assets/Song/Extend/Setting/Art/plugins.png?fileID=2800000&amp;guid=d7a9fd03e28e1457cb4a841f0790be09&amp;type=3#plugins&apos;);" />
+            </ui:VisualElement>
+            <ui:Label tabindex="-1" text="插件" display-tooltip-when-elided="true" name="Name" class="LeftMenuItemText" />
+        </ui:VisualElement>
+        <ui:VisualElement name="Information" class="LeftMenuItem">
+            <ui:VisualElement name="IconBg" class="LeftMenuItemIconbg">
+                <ui:VisualElement name="Icon" class="LeftMenuItemIcon" style="background-color: rgba(255, 255, 255, 0); background-image: url(&apos;project://database/Assets/Song/Extend/Setting/Art/information.png?fileID=2800000&amp;guid=c7b9953c933a641bb93afb37dfe80c32&amp;type=3#information&apos;);" />
+            </ui:VisualElement>
+            <ui:Label tabindex="-1" text="关于" display-tooltip-when-elided="true" name="Name" class="LeftMenuItemText" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+    <ui:VisualElement name="Area" class="Area" />
+</ui:UXML>

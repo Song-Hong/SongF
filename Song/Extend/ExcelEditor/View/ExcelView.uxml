@@ -1,0 +1,25 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/Song/Extend/Office/Excel/View/ExcelView.uss?fileID=7433441132597879392&amp;guid=ebcf37c330f734187ba963788bd09d06&amp;type=3#ExcelView" />
+    <ui:VisualElement name="FileController" class="FileController">
+        <ui:VisualElement name="FileControllerIcon" class="FileControllerIcon" />
+        <ui:Label tabindex="-1" text="文件" display-tooltip-when-elided="true" name="FileControllerText" class="FileControllerText" />
+    </ui:VisualElement>
+    <ui:ScrollView horizontal-scroller-visibility="Hidden" vertical-scroller-visibility="Hidden" name="Tools" mode="Horizontal" class="Tools">
+        <ui:Label tabindex="-1" text="|" display-tooltip-when-elided="true" name="PartingLine" class="PartingLine" />
+        <ui:Button display-tooltip-when-elided="true" name="Save" tooltip="存储" class="QuickTools" />
+        <ui:Button display-tooltip-when-elided="true" name="Undo" tooltip="撤销" class="QuickTools" />
+        <ui:Button display-tooltip-when-elided="true" name="Redo" tooltip="重做" class="QuickTools" />
+        <ui:Label tabindex="-1" text="|" display-tooltip-when-elided="true" name="PartingLine" class="PartingLine" />
+        <ui:Button text="开始" display-tooltip-when-elided="true" name="Start" class="PageChoose" />
+        <ui:Button text="插入" display-tooltip-when-elided="true" name="Inserting" class="Page" />
+        <ui:Button text="布局" display-tooltip-when-elided="true" name="Layout" class="Page" />
+        <ui:Button text="公式" display-tooltip-when-elided="true" name="Formula" class="Page" />
+        <ui:Button text="数据" display-tooltip-when-elided="true" name="Data" class="Page" />
+        <ui:Button text="审阅" display-tooltip-when-elided="true" name="Check" class="Page" />
+        <ui:Button text="视图" display-tooltip-when-elided="true" name="View" class="Page" />
+        <ui:Button text="扩展" display-tooltip-when-elided="true" name="Extended" class="Page" />
+    </ui:ScrollView>
+    <ui:ScrollView name="ToolsArea" class="ToolsArea" />
+    <ui:ScrollView name="Area" class="Area" />
+    <ui:ScrollView name="Sheets" class="Sheets" />
+</ui:UXML>
