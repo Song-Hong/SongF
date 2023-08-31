@@ -1,0 +1,6 @@
+{
+  "namespace" : "Song.Code",
+  "class" : "students",
+  "TableName" : "string",
+  "datas" : "List<student>"
+}

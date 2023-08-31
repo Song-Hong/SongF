@@ -1,9 +1,13 @@
+INFOMATION
+
+using System.Collections.Generic;
 using UnityEngine;
 
 namespace NAMESPACE
 {
+    [CreateAssetMenu(fileName = "CLASSNAME",menuName = "Song/CodeGeneration/CLASSNAME")]
     public class CLASSNAME:ScriptableObject
     {
-        
+CONTENT
     }
 }

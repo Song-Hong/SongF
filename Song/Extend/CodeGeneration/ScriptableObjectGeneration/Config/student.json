@@ -1,0 +1,6 @@
+{
+  "namespace" : "Song.Code",
+  "class" : "student",
+  "name" : "string",
+  "age" : "int"
+}
