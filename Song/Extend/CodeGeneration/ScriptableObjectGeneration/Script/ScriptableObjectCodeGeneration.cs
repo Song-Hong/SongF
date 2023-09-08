@@ -12,6 +12,7 @@ namespace Song.Extend.CodeGeneration
     {
         private const string TempPath = "Assets/Song/Extend/CodeGeneration/ScriptableObjectGeneration/Config/Temp.txt";
         private const string SavePath = "Assets/Script/CodeGeneration";
+        
         /// <summary>
         /// 生成
         /// </summary>
@@ -55,7 +56,6 @@ namespace Song.Extend.CodeGeneration
             classContent = classContent.Replace("INFOMATION",info);
             
             File.WriteAllText(filePath,classContent);
-            AssetDatabase.Refresh();
             
             return filePath;
         }

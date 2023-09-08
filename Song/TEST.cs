@@ -1,9 +1,9 @@
 using System;
+using System.Collections.Generic;
+using Song.Extend.CodeGeneration;
 using Song.Tools;
 using UnityEditor;
-using UnityEditor.PackageManager.UI;
 using UnityEngine;
-
 using SOG = Song.Extend.CodeGeneration.ScriptableObjectCodeGeneration;
 
 namespace Song
@@ -27,6 +27,18 @@ namespace Song
             Debug.Log("创建文件:"+generation);
             
             window.Close();
+        }
+
+        [MenuItem("Song/TEST1")]
+        public static void ShowTest1()
+        {
+            var dictionary = new Dictionary<string,string> ();
+            dictionary.Add("你好","1");
+            dictionary.Add("你是","2");
+            dictionary.Add("1234","3");
+
+            var SOA = new ScriptableObjectAssign();
+            SOA.Assign("Assets/1.yaml",dictionary);
         }
     }
 }
