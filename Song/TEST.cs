@@ -32,13 +32,11 @@ namespace Song
         [MenuItem("Song/TEST1")]
         public static void ShowTest1()
         {
-            var dictionary = new Dictionary<string,string> ();
-            dictionary.Add("你好","1");
-            dictionary.Add("你是","2");
-            dictionary.Add("1234","3");
-
             var SOA = new ScriptableObjectAssign();
-            SOA.Assign("Assets/1.yaml",dictionary);
+            var dictionary = new Dictionary<string, string>();
+            dictionary.Add("name","肖杰");
+            dictionary.Add("age","22");
+            SOA.Assign("Assets/Script/Data/student.asset",dictionary);
         }
     }
 }

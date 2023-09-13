@@ -2,14 +2,21 @@ using UnityEngine;
 using System.Collections.Generic;
 using System.IO;
 using UnityEngine.SceneManagement;
-using YamlDotNet.Core;
-using YamlDotNet.Core.Events;
-using YamlDotNet.Serialization;
 
 namespace Song.Extend.CodeGeneration
 {
     public class ScriptableObjectAssign
     {
+        public void AssignAll(string path,List<Dictionary<string, string>> data)
+        {
+            
+        }
+
+        public void AssignList(string path)
+        {
+            
+        }
+
         /// <summary>
         /// 赋值
         /// </summary>
@@ -17,11 +24,31 @@ namespace Song.Extend.CodeGeneration
         /// <param name="datas">数据</param>
         public void Assign(string path,Dictionary<string,string> datas)
         {
-            using (TextWriter writer = new StreamWriter(path)) 
+            var readContent = File.ReadLines(path);
+            var saveContent = "";
+            var changeValue = " ";
+            foreach (var s in readContent)
             {
-                var serializer = new Serializer();
-                serializer.Serialize(new Emitter(writer,2), datas); 
+                foreach (var key in datas.Keys)
+                {
+                    if (s.Contains(key))
+                    {   
+                        saveContent += $"  {key}: {datas[key]}\n";
+                        changeValue = key;
+                        break;
+                    }
+                }
+                if (!string.IsNullOrWhiteSpace(changeValue))
+                {
+                    datas.Remove(changeValue);
+                    changeValue = null;
+                }
+                else
+                {
+                    saveContent += s+"\n";
+                }
             }
+            File.WriteAllText(path,saveContent);
         }
     }
 }
