@@ -32,11 +32,25 @@ namespace Song
         [MenuItem("Song/TEST1")]
         public static void ShowTest1()
         {
+            var SOC = new ScriptableObjectCreate();
             var SOA = new ScriptableObjectAssign();
-            var dictionary = new Dictionary<string, string>();
-            dictionary.Add("name","肖杰");
-            dictionary.Add("age","22");
-            SOA.Assign("Assets/Script/Data/student.asset",dictionary);
+            var path = "Assets/Script/Data/student.asset";
+            
+            SOC.CreateList("Song.Code",path,"students");
+            for (int i = 0; i < 10; i++)
+            {
+                SOC.CreateAdd("Song.Code",
+                    path,
+                    "student",
+                    i.ToString());
+            }
+
+            SOA.AssignList(path);
+            // var SOA = new ScriptableObjectAssign();
+            // var dictionary = new Dictionary<string, string>();
+            // dictionary.Add("name","肖杰");
+            // dictionary.Add("age","22");
+            // SOA.Assign("Assets/Script/Data/student.asset",dictionary);
         }
     }
 }
