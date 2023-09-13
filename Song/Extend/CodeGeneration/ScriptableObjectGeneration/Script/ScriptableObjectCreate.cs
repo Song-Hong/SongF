@@ -1,6 +1,6 @@
 namespace Song.Extend.CodeGeneration
 {
-    public class ScriptableObjectCreat
+    public class ScriptableObjectCreate
     {
         
     }
